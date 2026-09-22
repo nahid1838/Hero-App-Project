@@ -23,7 +23,7 @@ const Banner = () => {
             />
 
 
-            <div className=" text-center space-y-8 py-10 bg-linear-to-r from-blue-500 to-purple-600 text-white">
+            <div className=" text-center space-y-8 py-13 bg-linear-to-r from-blue-500 to-purple-600 text-white">
                 <h3 className="text-4xl font-bold text-zinc-800">Trusted by Millions, Built for You</h3>
                 <div className="flex justify-center gap-20">
                     <div className="space-y-3">

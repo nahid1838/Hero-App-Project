@@ -14,7 +14,7 @@ const Navbar = () => {
                 <Link href={"/apps"}>Apps</Link>
               </li>
               <li>
-                <a>Installation</a>
+                <Link href={"/instalation"}>Installation</Link>
               </li>
 
     </>
@@ -53,16 +53,15 @@ const Navbar = () => {
           </div>
 
 
-          <div className="flex items-center gap-1">
+          <Link className="flex items-center gap-1" href={"/"}>
             <Image 
             src={NavLogo}
             alt="Navbar Logo"
             height={30}
             width={30}
             />
-
             <p className="font-bold bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">HERO.IO</p>
-          </div>
+          </Link>
 
 
         </div>
