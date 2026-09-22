@@ -22,8 +22,10 @@ const Footer = () => {
                     <p className="text-lg font-semibold text-gray-200">Social Links</p>
                     <div className="flex gap-4 text-lg cursor-pointer">
                         <span><FaSquareXTwitter /></span>
-                        <span><FaLinkedin /></span>
-                        <span><FaSquareFacebook /></span>
+                        
+                        <a href="https://www.linkedin.com/in/na-nahid-529152428/"><span><FaLinkedin /></span></a>
+
+                        <a href="https://www.facebook.com/md.nahid.8251"><span><FaSquareFacebook /></span></a>
                     </div>
                 </div>
             </div>

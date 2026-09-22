@@ -1,6 +1,11 @@
 
 export const getApps = async() => {
-    const response = await fetch("http://localhost:3000/data.json");
-    const data = await response.json();
-    return data;
+    try {
+        const response = await fetch("http://localhost:3000/data.json");
+        const data = await response.json();
+        return data;
+    }catch(error){
+        console.log("Error fetching apps data", error);
+        return[];
+    };
 }
