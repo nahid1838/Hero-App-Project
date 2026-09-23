@@ -3,6 +3,7 @@
 import { AppContext } from "@/context/AppProvider";
 import { IApp } from "@/typs/type";
 import { useContext, useState } from "react";
+import { toast } from "react-toastify";
 
 const AppInstallButton = ({app}: {app: IApp}) => {
 
@@ -12,6 +13,8 @@ const AppInstallButton = ({app}: {app: IApp}) => {
     const handleInstallButton = () => {
         setInstalledApps([...installedApps, app]);
         setIsInstalled(true);
+
+        toast.success(`${app.title} Installed Successfully.`)
     }
 
     return (

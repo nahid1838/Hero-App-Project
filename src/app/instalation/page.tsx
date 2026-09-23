@@ -19,7 +19,7 @@ const InstallationPage = () => {
 
             {
                 installedApps.length > 0 ?
-                <div>
+                <div className="space-y-5 pt-5 pb-15">
                 {
                     installedApps.map(installedApp => <InstalledAppCard
                         key={installedApp.id} 
@@ -33,7 +33,7 @@ const InstallationPage = () => {
 
                         <div className="flex justify-center">
                             <Link href={"/apps"}
-                            className="w-fit flex items-center gap-0.5 text-gray-100 bg-gray-400 px-5 py-0.5 rounded-md cursor-pointer"><ImDownload3 /> Chose App To Download</Link>
+                            className="w-fit flex items-center gap-0.5 text-gray-100 bg-gray-400 px-5 py-0.5 rounded-md cursor-pointer"><ImDownload3 /> Chose App To Install</Link>
                         </div>
                     </div>
                 </div>
