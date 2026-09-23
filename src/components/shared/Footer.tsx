@@ -7,7 +7,7 @@ import { FaSquareFacebook, FaSquareXTwitter } from "react-icons/fa6";
 const Footer = () => {
     return (
         <div className="bg-[#001931]">
-            <div className="container mx-auto flex justify-between py-10">
+            <div className="container mx-auto flex justify-between py-10 px-5 md:px-0">
                 <Link className="flex items-center gap-1" href={"/"}>
                     <Image 
                     src={footerLogo}

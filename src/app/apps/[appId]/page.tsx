@@ -5,6 +5,8 @@ import downloadImg from "@/assets/icon-downloads.png";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import { notFound } from "next/navigation";
 import AppInstallButton from "@/components/Apps/AppInstallButton";
+import Link from "next/link";
+import { IoArrowBackSharp } from "react-icons/io5";
 
 interface AppDetailPageProps {
     params: Promise<{
@@ -36,6 +38,12 @@ const AppDetailPage = async ({ params }: AppDetailPageProps) => {
 
     return (
         <div className="min-h-screen bg-gray-50 py-10 px-4">
+
+            <div className="pb-4">
+                <Link href={"/apps"}>
+                <p className="container mx-auto flex gap-1 text-white font-semibold bg-sky-500 items-center px-4 py-1.5 w-fit hover:bg-green-500 hover:duration-150 hover:text-black"><IoArrowBackSharp className="text-[20px]"/> GO BACK!</p></Link>
+            </div>
+
             <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-sm border border-gray-100 p-6 sm:p-10">
 
                 {/* Header */}

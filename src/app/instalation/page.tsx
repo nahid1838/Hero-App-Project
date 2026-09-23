@@ -20,6 +20,9 @@ const InstallationPage = () => {
             {
                 installedApps.length > 0 ?
                 <div className="space-y-5 pt-5 pb-15">
+                    <div>
+                        <h3 className="container mx-auto text-3xl font-bold text-gray-800">({installedApps.length}) App Installed</h3>
+                    </div>
                 {
                     installedApps.map(installedApp => <InstalledAppCard
                         key={installedApp.id} 
@@ -28,12 +31,12 @@ const InstallationPage = () => {
                 </div> :
 
                 <div className="pb-10">
-                    <div className="container mx-auto bg-white rounded-2xl py-15 space-y-3">
+                    <div className="container mx-auto bg-white rounded-2xl py-15 space-y-5">
                         <h3 className="text-4xl text-gray-400 text-center font-bold">There is no App Insalled</h3>
 
                         <div className="flex justify-center">
                             <Link href={"/apps"}
-                            className="w-fit flex items-center gap-0.5 text-gray-100 bg-gray-400 px-5 py-0.5 rounded-md cursor-pointer"><ImDownload3 /> Chose App To Install</Link>
+                            className="w-fit flex items-center gap-0.5 text-white bg-gray-400 hover:bg-sky-300 px-5 py-0.5 rounded-md cursor-pointer"><ImDownload3 /> Chose App To Install</Link>
                         </div>
                     </div>
                 </div>

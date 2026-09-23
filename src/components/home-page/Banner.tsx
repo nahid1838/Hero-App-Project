@@ -11,21 +11,25 @@ const Banner = () => {
                 <p className='max-w-[60%] mx-auto text-gray-600'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 
                 <div className="flex gap-5 justify-center">
-                    <button className="flex items-center gap-1 border border-gray-400 px-5 py-2.5 rounded-lg cursor-pointer hover:bg-green-300 hover:border-none transition-transform duration-300 hover:-translate-x-2"><BsGooglePlay className="text-xl text-blue-600" />Google Play</button>
+                    <a href="https://play.google.com/store/games?hl=en">
+                        <button className="flex items-center gap-1 border border-gray-400 px-5 py-2.5 rounded-lg cursor-pointer hover:bg-green-300 hover:border-none transition-transform duration-300 hover:-translate-x-2"><BsGooglePlay className="text-xl text-blue-600" />Google Play</button>
+                    </a>
 
-                    <button className="flex items-center gap-1 border border-gray-400 px-5 py-2.5 rounded-lg cursor-pointer hover:bg-green-300 hover:border-none transition-transform duration-300 hover:translate-x-2"><FaAppStoreIos className="text-xl text-blue-600" />Google Play</button>
+                    <a href="https://www.apple.com/app-store/">
+                        <button className="flex items-center gap-1 border border-gray-400 px-6.5 py-2.5 rounded-lg cursor-pointer hover:bg-green-300 hover:border-none transition-transform duration-300 hover:translate-x-2"><FaAppStoreIos className="text-xl text-blue-600" />App Store</button>
+                    </a>
                 </div>
             </div>
 
-            <Image className="mx-auto w-[550px] h-auto pt-5"
+            <Image className="mx-auto w-[450px] md:w-[550px] h-auto pt-5"
             src={heroImg}
             alt="Banner Image"
             />
 
 
             <div className=" text-center space-y-8 py-13 bg-linear-to-r from-blue-500 to-purple-600 text-white">
-                <h3 className="text-4xl font-bold text-zinc-800">Trusted by Millions, Built for You</h3>
-                <div className="flex justify-center gap-20">
+                <h3 className="text-4xl font-bold text-zinc-900">Trusted by Millions, Built for You</h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 justify-center gap:10 md:gap-20">
                     <div className="space-y-3">
                         <p className="text-gray-300">Total Downloads</p>
                         <h2 className="text-5xl font-bold">29.6M</h2>
@@ -36,7 +40,7 @@ const Banner = () => {
                         <h2 className="text-5xl font-bold">906K</h2>
                         <p className="text-gray-300">46% more than last month</p>
                     </div>
-                    <div className="space-y-3">
+                    <div className="space-y-3 mt-5 md:mt-0">
                         <p className="text-gray-300">Active Apps</p>
                         <h2 className="text-5xl font-bold">132+</h2>
                         <p className="text-gray-300">31 more will Launch</p>

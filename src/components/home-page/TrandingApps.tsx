@@ -16,7 +16,7 @@ const TrandingApps = async() => {
                 <p className='text-gray-600'>Explore All Trending Apps on the Market developed by us</p>
             </div>
 
-            <div className="grid grid-cols-4 space-x-5 space-y-10 pt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 pt-10">
                 {
                     apps.slice(0, 8).map((app: IApp) => <AppCard key={app.id} app={app}></AppCard>)
                 }
